@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">XML_Layout_Excerciseb</string>
+    <string name="temperature_input">temperature_input</string>
+    <string name="Radio_Group_Container">Radio_Group_Container</string>
+    <string name="Celsius">Celsius</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="kelvin">kevlin</string>
+    <string name="Round_Up">Round_Up</string>
+    <string name="Calculate_Temperature">Calculate_Temperature</string>
+    <string name="Amount_Display">Amount_Display</string>
+</resources>

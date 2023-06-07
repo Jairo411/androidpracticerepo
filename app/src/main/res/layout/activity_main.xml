@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/temperature_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Put in temperature"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <RadioGroup
+        android:id="@+id/Radio_Group_Container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/temperature_input"
+        app:layout_constraintLeft_toLeftOf="@id/temperature_input">
+    <RadioButton
+        android:id="@+id/celsius"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:text="Celsius"
+        app:layout_constraintTop_toBottomOf="@id/temperature_input"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <RadioButton
+        android:id="@+id/fahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:text="Fahrenheit"
+        app:layout_constraintTop_toBottomOf="@id/celsius"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <RadioButton
+        android:id="@+id/kelvin"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:text= "kevlin"
+        app:layout_constraintTop_toBottomOf="@id/fahrenheit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/Round_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Round up?"
+        app:layout_constraintTop_toBottomOf="@id/Radio_Group_Container"
+        app:layout_constraintRight_toLeftOf="parent"
+        />
+
+    <Button
+        android:id="@+id/Calculate_Temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate temperature"
+        app:layout_constraintTop_toBottomOf="@id/Round_up"
+        />
+
+    <TextView
+        android:id="@+id/Amount_Display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="temperature"
+        app:layout_constraintTop_toBottomOf="@id/Calculate_Temperature"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
