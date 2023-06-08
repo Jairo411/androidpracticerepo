@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:hint="Put in temperature"
+        android:hint="Put in temperature °C"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,10 +23,10 @@
         app:layout_constraintTop_toBottomOf="@id/temperature_input"
         app:layout_constraintLeft_toLeftOf="@id/temperature_input">
     <RadioButton
-        android:id="@+id/celsius"
+        android:id="@+id/rankine"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
-        android:text="Celsius"
+        android:text="Rankine"
         app:layout_constraintTop_toBottomOf="@id/temperature_input"
         app:layout_constraintLeft_toLeftOf="parent"
         />
@@ -35,14 +35,14 @@
         android:layout_width="wrap_content"
         android:layout_height="32dp"
         android:text="Fahrenheit"
-        app:layout_constraintTop_toBottomOf="@id/celsius"
+        app:layout_constraintTop_toBottomOf="@id/rankine"
         app:layout_constraintLeft_toLeftOf="parent"
         />
     <RadioButton
         android:id="@+id/kelvin"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
-        android:text= "kevlin"
+        android:text= "Kevlin"
         app:layout_constraintTop_toBottomOf="@id/fahrenheit"
         app:layout_constraintLeft_toLeftOf="parent"
         />
@@ -61,15 +61,15 @@
         android:id="@+id/Calculate_Temperature"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calculate temperature"
+        android:text="Convert temperature"
         app:layout_constraintTop_toBottomOf="@id/Round_up"
         />
 
     <TextView
-        android:id="@+id/Amount_Display"
+        android:id="@+id/Temperature_Display"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="temperature"
+        tools:text="@string/Default_Temperature_Display"
         app:layout_constraintTop_toBottomOf="@id/Calculate_Temperature"
         app:layout_constraintEnd_toEndOf="parent"
         />

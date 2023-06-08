@@ -3,10 +3,13 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
+
 android {
+    buildFeatures{
+        viewBinding true
+    }
     namespace 'com.example.xml_layout_excerciseb'
     compileSdk 33
-
     defaultConfig {
         applicationId "com.example.xml_layout_excerciseb"
         minSdk 24
@@ -30,6 +33,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
 }
 
 dependencies {
