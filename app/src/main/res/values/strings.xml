@@ -5,11 +5,12 @@
     <string name="Celsius">Celsius</string>
     <string name="fahrenheit">Fahrenheit</string>
     <string name="kelvin">kevlin</string>
-    <string name="Round_Up">Round_Up</string>
+    <string name="Round_Up_text">Do you want to round up?</string>
     <string name="Calculate_Temperature">Calculate_Temperature</string>
     <string name="Temperature_Display">Temperature_Display %s</string>
     <string name="Default_Temperature_Display">Temperature K/°F/°Ra</string>
     <string name="kevlin_Symbol">K</string>
     <string name="fahrenheit_Symbol">°F</string>
     <string name="rankine_Symbol">°Ra</string>
+    <string name="TV_temperature">Select the temperature you want to convert to</string>
 </resources>

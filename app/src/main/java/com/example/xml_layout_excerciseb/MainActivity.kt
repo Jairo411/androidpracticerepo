@@ -9,6 +9,7 @@ import android.widget.RadioGroup
 import android.widget.Switch
 import android.widget.TextView
 import com.example.xml_layout_excerciseb.databinding.ActivityMainBinding
+import com.google.android.material.switchmaterial.SwitchMaterial
 import java.lang.NumberFormatException
 import java.lang.StringBuilder
 import kotlin.math.*
@@ -17,9 +18,9 @@ import kotlin.math.*
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityMainBinding
-    private lateinit var calculateTemperatureB: Button
+    private lateinit var calculateTemperatureB: com.google.android.material.button.MaterialButton
     private lateinit var temperatureRadioGroup: RadioGroup
-    private lateinit var roundUpSwitchB: Switch
+    private lateinit var roundUpSwitchB: SwitchMaterial
     private lateinit var temperatureDisplay : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -53,7 +54,7 @@ class MainActivity : AppCompatActivity() {
             var temperature : Double? = 0.0
             var selectedTemperatureConversion : Double? = 0.0
         try {
-            temperatureString = binding.temperatureInput.toString()
+            temperatureString = binding.temperatureInputEditText.text.toString()
             temperature = temperatureString.toDouble()
         }catch (e : NumberFormatException){
                 Log.w("Exception", e.message!!)

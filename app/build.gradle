@@ -12,6 +12,7 @@ android {
     compileSdk 33
     defaultConfig {
         applicationId "com.example.xml_layout_excerciseb"
+        vectorDrawables.useSupportLibrary = true
         minSdk 24
         targetSdk 33
         versionCode 1
